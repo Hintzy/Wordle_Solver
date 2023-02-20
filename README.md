@@ -2,8 +2,18 @@
 
 This program was inspired by the popularization of Wordle and a comment from a friend of mine who said she honed her Python coding skills by trying to write a program that solves the daily Wordle.
 
-The first commit of this program was a text based approach that run through the python console. It relied on user input for each guess, and then indication of which letters were green, yellow, or black. The first versions logic did not know how to handle repeat letters within words, and as a result, the candidate answers produced by the program are correct, but the list is not complete.  Many words which are viable answers based on user input are exluded from the list.
+First commit:
+- Introduces a text based approach that runs through the python console. 
+- Relied on user input for each guess, and indication of which letters were green, yellow, or black. 
+- The first commit's logic did not know how to handle repeat letters within words.  As a result, the candidate answers produced by the program are correct, but the list of candidate answers is incomplete.
 
-The second commit of the program still uses a text based approach, but the logic of the program was refined to handle double letters. The user input method to indicate green, yellow, and black status of each letter was changed. The original method queried the user to indicate which letters were green by the name (e.g. 'd' for d) of the letter. If a letter with multiple instances was entered, the program would then ask for index/positional clarification of which letter. If the indicated letter only had a single instance then no positional clarification was required. A simpler input method was incorporated into the second commit, which asks the user for an input string of five letters indicated the color of each letter within the word (e.g. 'ggybb' for [green, green, yellow, black, black]). This reduces the amount of inputs asked for by the user and reduces potential input errors. 
+Second commit:
+- Continues using a text based approach.
+- The logic of the program was refined to handle double letters. 
+- User input method to indicate green, yellow, and black status of each letter was changed. Asked the user for an input string of five letters indicated the color of each letter within the word (e.g. 'ggybb' for [green, green, yellow, black, black]). This reduces the amount of inputs asked for by the user and reduces potential input errors.   
 
-The third commit of the program uses Tkinter to create a GUI for the program, but allows all the existing logic of the program to remain the same. The change of the user input method in the second commit integrates nicely with the GUI as the on screen buttons generate the 5-character string which the program looks for. The code for the program was broken into separate files for organization. The code was also rewritten to take an OOP approach rather than procedural. 
+Third commit:
+- Introduces a GUI using Tkinter. 
+- Uses all existing logic of the program. 
+- Code was broken into separate files for organization. 
+- Code was rewritten to take an OOP approach rather than procedural. 

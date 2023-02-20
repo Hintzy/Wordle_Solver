@@ -107,20 +107,6 @@ def correct_answer(l):
     return len(l) == 5
 
 
-def print_form(l, words_per_line):
-    """
-    Prints entries in list 'l' as an argument-specified words per line.
-    """
-    if not l:
-        print('No word matches found.')
-    else:
-        for i, word in enumerate(l):
-            word = word.strip()
-            print(word, end='\t')
-            if (i + 1) % words_per_line == 0:
-                print()
-
-
 def print_guess_info(guess_num, user_guess, green, green_tups, yellow, yellow_tups, wrong, wrong_tups):
     """
     Print function for internal variables for troubleshooting and development.
@@ -134,11 +120,25 @@ def print_guess_info(guess_num, user_guess, green, green_tups, yellow, yellow_tu
     print('Limited wrong letters: ', wrong_tups, end='\n')
 
 
-def print_candidate_words(word_candidates):
-    """
-    Prints the resulting candidate words after user inputs and filter checks on the current word list.
-    """
-    print('')
-    print('Potential Solutions: ')
-    print_form(word_candidates, 15)
-    print('\n')
+# def print_form(l, words_per_line):
+#     """
+#     Prints entries in list 'l' as an argument-specified words per line when solver is being used in python console.
+#     """
+#     if not l:
+#         print('No word matches found.')
+#     else:
+#         for i, word in enumerate(l):
+#             word = word.strip()
+#             print(word, end='\t')
+#             if (i + 1) % words_per_line == 0:
+#                 print()
+
+
+# def print_candidate_words(word_candidates):
+#     """
+#     Print function for solutions when wordle solver is operation within python console.
+#     """
+#     print('')
+#     print('Potential Solutions: ')
+#     print_form(word_candidates, 15)
+#     print('\n')
